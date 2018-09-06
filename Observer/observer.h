@@ -5,7 +5,7 @@
 class IObserver
 {
 public:
-    virtual void Update(float price) = 0;  // 更新价格
+	virtual void Update(float price) = 0;  // 更新价格
 };
 
 #endif // OBSERVER_H

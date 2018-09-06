@@ -35,26 +35,27 @@ using namespace std;
 //    Singleton() {}
 //};
 
-//// 单例
-//class Singleton
-//{
-//public:
-//    static Singleton& GetInstance()
-//    {
-//        static Singleton instance;
-//        return instance;
-//    }
+// 单例
+class Singleton
+{
+public:
+    static Singleton& GetInstance()
+    {
+        static Singleton instance;
+        return instance;
+    }
 
-//    void doSomething() {
-//        cout << "Do something" << "\n";
-//    }
+    void doSomething() {
+        cout << "Do something" << "\n";
+    }
 
-//private:
-//    Singleton() {}  // 构造函数（被保护）
-//    Singleton(Singleton const &);  // 无需实现
-//    Singleton& operator = (const Singleton &);  // 无需实现
-//};
+private:
+    Singleton() {}  // 构造函数（被保护）
+    Singleton(Singleton const &);  // 无需实现
+    Singleton& operator = (const Singleton &);  // 无需实现
+};
 
+#if 0
 //// 单例 - 懒汉式/饿汉式公用
 //class Singleton
 //{
@@ -121,5 +122,6 @@ private:
         static GC gc;  // 用于释放单例
     };
 };
+#endif
 
 #endif // SINGLETON_H
