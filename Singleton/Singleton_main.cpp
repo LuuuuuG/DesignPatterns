@@ -15,10 +15,11 @@ int main()
 	//cout << (pSingleton1 == pSingleton2) << endl;
 
 	Singleton::GetInstance().doSomething();  // OK
+	//cout << "hello world" << endl;
 	//Singleton single = Singleton::GetInstance();  // Error 不能编译通过
 
     //Singleton::GetInstance();
     //Singleton::GetInstance()->DestoryInstance();  // 手动释放
-
+	system("pause");
     return 0;
 }

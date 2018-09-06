@@ -19,4 +19,4 @@ AFactory* AFactory::CreateFactory(FACTORY_TYPE factory)
         break;
     }
     return pFactory;
-}
+};
